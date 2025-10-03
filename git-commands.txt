@@ -1,0 +1,31 @@
+# Git Commands Used
+
+# Step 1: Initialize a new Git repository in the current folder
+git init
+
+# Step 2: Stage all files in the current folder (adds them to staging area)
+git add .
+
+# Step 3: Commit the staged files with a descriptive commit message
+git commit -m "First commit with README and version v1.0.0"
+
+# Step 4: Connect local repository to the remote GitHub repository
+git remote add origin https://github.com/Ragav2908/devops-git-basics.git
+
+# Step 5: Rename the default branch to 'main'
+git branch -M main
+
+# Step 6: Push the commit to the remote repository's main branch
+git push -u origin main
+
+# Step 7: Stage the updated version.txt file
+git add version.txt
+
+# Step 8: Commit the version update with a message
+git commit -m "Updating the version to v1.0.1"
+
+# Step 9: Push the new commit to GitHub
+git push
+
+# Step 10: Show commit history
+git log --oneline
